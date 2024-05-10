@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".busSearch">
+
+    <LinearLayout
+        android:id="@+id/nav"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginStart="16dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.025"></LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/from"
+        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.FilledBox"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="76dp"
+        android:gravity="center"
+        android:textColor="#000"
+        app:boxBackgroundColor="#fff"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextEmail"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nav">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/frominput"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="#fff"
+            android:hint="Email or Username"
+            android:textColor="#fff"
+            android:textColorHint="#ffff"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="275dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/destinationTo"
+        style="@style/ThemeOverlay.Material3.AutoCompleteTextView.FilledBox"
+        android:layout_width="350dp"
+        android:layout_height="55dp"
+        android:gravity="center"
+        android:textColor="#000"
+        app:boxBackgroundColor="#fff"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+
+        app:layout_constraintTop_toBottomOf="@+id/from"
+        app:layout_constraintVertical_bias="0.093">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/destination"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="#fff"
+            android:hint="Email or Username"
+            android:textColor="#fff"
+            android:textColorHint="#ffff"
+            android:textSize="16sp"
+            android:textStyle="italic"
+            tools:layout_editor_absoluteX="27dp"
+            tools:layout_editor_absoluteY="275dp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/fromId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="From"
+        android:textColor="#0C0C0C"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/from"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/nav"
+        app:layout_constraintVertical_bias="0.66" />
+
+    <TextView
+        android:id="@+id/destination1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="14dp"
+        android:layout_marginBottom="9dp"
+        android:text="Destination"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/destinationTo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/from"
+        app:layout_constraintVertical_bias="0.0" />
+</androidx.constraintlayout.widget.ConstraintLayout>

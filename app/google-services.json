@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "72335056967",
+    "project_id": "safarmitra",
+    "storage_bucket": "safarmitra.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:72335056967:android:9717807eec8ff5671ad162",
+        "android_client_info": {
+          "package_name": "com.example.safarmitra"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBZ6tjVxmSWL3kDmmasv6lNlackCb71XpU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
