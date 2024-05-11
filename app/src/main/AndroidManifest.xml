@@ -50,7 +50,7 @@
         -->
         <meta-data
             android:name="com.google.android.maps.v2.API_KEY"
-            android:value="AIzaSyCKCOUo-bsJOETpsYFjW7JMWDn_yFf42VU" />
+            android:value="add your key" />
 
         <activity
             android:name=".busSearch"
